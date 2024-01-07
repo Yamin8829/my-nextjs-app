@@ -9,15 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.14.13",
+    "@mui/system": "^5.15.3",
+    "axios": "^1.6.5",
+    "googleapis": "^130.0.0",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-parallax": "^3.5.1",
+    "react-scroll-parallax": "^3.4.5",
+    "tw-elements": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "20.8.2",
     "@types/react": "18.2.24",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "daisyui": "^3.9.2",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "postcss": "^8",
