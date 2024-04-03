@@ -1,14 +1,12 @@
 import Image from "next/image";
-import ImageGallery from "./components/imageGallery";
-import ResponsiveAppBar from "./components/header";
-import ParallaxMirror from "./components/parallaxMirror";
+import ImageGallery from "@/app/album/readImageFiles";
+import ParallaxMirror from "@/components/parallaxMirror";
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <ParallaxMirror />
-      <ResponsiveAppBar />
-      <ImageGallery />
+      <div></div>
     </>
   );
 }
