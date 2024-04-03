@@ -31,12 +31,7 @@ export default async function FetchLists() {
     // console.log(data);
     return (
       <>
-        <ul>
-          {data.map((item: any) => (
-            <CustomPaging item={item} />
-            // <img key={item.key} alt={item.key} src={item.url} />
-          ))}
-        </ul>
+        <h1>hhh</h1>
       </>
     );
   } catch (error) {
