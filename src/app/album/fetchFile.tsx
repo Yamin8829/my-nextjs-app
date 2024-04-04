@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import CustomPaging from "@/components/Carousel/myCaro";
 
 async function GetDataApi() {
-  const res = await fetch("http://localhost:3000/api/image", {
+  const res = await fetch("https://myschoolsite.vercel.app/api/image", {
     cache: "no-store",
     headers: {
       "Content-Type": "application/json",
@@ -15,9 +15,12 @@ async function GetDataApi() {
   return res.json();
 }
 async function GetData() {
-  const res = await fetch("http://localhost:3000/data/imageData.json", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://myschoolsite.vercel.app/data/imageData.json",
+    {
+      cache: "no-store",
+    }
+  );
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
@@ -40,12 +43,15 @@ export default async function FetchLists() {
   }
 }
 async function FetchFile() {
-  const res = await fetch("http://localhost:3000/data/imageData.json", {
-    cache: "no-store",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const res = await fetch(
+    "https://myschoolsite.vercel.app/data/imageData.json",
+    {
+      cache: "no-store",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");

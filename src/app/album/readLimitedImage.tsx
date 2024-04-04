@@ -35,7 +35,7 @@ export async function readImageFiles(request: NextResponse) {
 }
 
 export async function GetData() {
-  const res = await fetch("http://localhost:3000/api/image", {
+  const res = await fetch("https://myschoolsite.vercel.app/api/image", {
     cache: "no-store",
   });
   if (!res.ok) {
