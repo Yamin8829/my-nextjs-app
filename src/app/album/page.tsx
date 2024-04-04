@@ -2,15 +2,24 @@ import ImageCarousel from "@/components/Carousel/myCaro";
 import Link from "next/link";
 
 export default async function Page() {
-  const res10A = await fetch("http://localhost:3000/data/2023_2024/10_A.json", {
-    cache: "no-store",
-  });
-  const res10B = await fetch("http://localhost:3000/data/2023_2024/10_B.json", {
-    cache: "no-store",
-  });
-  const res10C = await fetch("http://localhost:3000/data/2023_2024/10_C.json", {
-    cache: "no-store",
-  });
+  const res10A = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/10_A.json",
+    {
+      cache: "no-store",
+    }
+  );
+  const res10B = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/10_B.json",
+    {
+      cache: "no-store",
+    }
+  );
+  const res10C = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/10_C.json",
+    {
+      cache: "no-store",
+    }
+  );
   const imageLists10A = await res10A.json();
   const imageList10A = await imageLists10A.slice(0, 4);
   const album_id10A = await imageList10A[0].album_id;
@@ -23,15 +32,24 @@ export default async function Page() {
   const imageList10C = await imageLists10C.slice(0, 4);
   const album_id10C = await imageList10C[0].album_id;
 
-  const res11A = await fetch("http://localhost:3000/data/2023_2024/11_A.json", {
-    cache: "no-store",
-  });
-  const res11B = await fetch("http://localhost:3000/data/2023_2024/11_B.json", {
-    cache: "no-store",
-  });
-  const res11C = await fetch("http://localhost:3000/data/2023_2024/11_C.json", {
-    cache: "no-store",
-  });
+  const res11A = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/11_A.json",
+    {
+      cache: "no-store",
+    }
+  );
+  const res11B = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/11_B.json",
+    {
+      cache: "no-store",
+    }
+  );
+  const res11C = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/11_C.json",
+    {
+      cache: "no-store",
+    }
+  );
   const imageLists11A = await res11A.json();
   const imageList11A = await imageLists11A.slice(0, 4);
   const album_id11A = await imageList11A[0].album_id;
