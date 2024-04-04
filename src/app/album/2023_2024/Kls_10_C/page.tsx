@@ -2,9 +2,15 @@ import ImagePaging from "@/components/ImagePaging";
 import Link from "next/link";
 
 export default async function Page() {
-  const res10C = await fetch("http://localhost:3000/data/2023_2024/10_C.json", {
-    cache: "no-store",
-  });
+  // const res10C = await fetch("http://localhost:3000/data/2023_2024/10_C.json", {
+  //   cache: "no-store",
+  // });
+  const res10C = await fetch(
+    "https://myschoolsite.vercel.app/data/2023_2024/10_C.json",
+    {
+      cache: "no-store",
+    }
+  );
   const imageLists10A = await res10C.json();
   const imageList10A = await imageLists10A.slice(0, Infinity);
   const album_id10A = await imageList10A[0].album_id;

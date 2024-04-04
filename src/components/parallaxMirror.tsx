@@ -13,7 +13,7 @@ export default function ParallaxMirror() {
         <div
           className="hero min-h-screen"
           style={{
-            backgroundImage: `url(http://localhost:3000/images/fbg2.jpg)`,
+            backgroundImage: `url(https://myschoolsite.vercel.app/images/fbg2.jpg)`,
             backgroundAttachment: "fixed",
             backgroundPosition: "center",
           }}
